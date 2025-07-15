@@ -7,7 +7,9 @@ import grainImage from "../assets/images/grain.jpg"
 const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative">
-      <div className="absolute"></div>
+      <div className="absolute inset-0 " style={{
+        backgroundImage: `url(${grainImage.src})`
+      }}></div>
       <div className="container m-auto">
         <div className="flex flex-col items-center">
           <img

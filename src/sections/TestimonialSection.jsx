@@ -52,6 +52,8 @@ const TestimonialSection = () => {
             {testimonials.map(testimonial=>(
                 <div key={testimonial.name}>
                      <img src={testimonial.avatar} alt={testimonial.name} />
+                     <div>{testimonial.name}</div>
+                     <div></div>
                 </div>
             ))}
         </div>

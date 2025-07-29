@@ -44,7 +44,8 @@ const testimonials = [
 const TestimonialSection = () => {
   return (
     <>
-      <div>
+      <div className='py-16'>
+        <div className='container'>
         <p>Happy Clients</p>
         <h2>What Clients Say About Me</h2>
         <p>Don't just take my word for it. See what my clients say about my work.</p>
@@ -53,9 +54,10 @@ const TestimonialSection = () => {
                 <div key={testimonial.name}>
                      <img src={testimonial.avatar} alt={testimonial.name} />
                      <div>{testimonial.name}</div>
-                     <div></div>
+                     <div>{testimonial.text}</div>
                 </div>
             ))}
+        </div>
         </div>
       </div>
     </>

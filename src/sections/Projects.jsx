@@ -4,6 +4,8 @@ import lightSaasLandingPage from "../assets/images/light-saas-landing-page.png";
 import CheckCircleIcon from "../assets/icons/check-circle.svg?react";
 import ArrowTopRight from "../assets/icons/arrow-up-right.svg?react";
 import grainImage from "../assets/images/grain.jpg";
+import { Card } from "../components/Card";
+
 const portfolioProjects = [
   {
     company: "Acme Corp",
@@ -73,9 +75,9 @@ export const ProjectSection = () => {
           </p>
           <div className="flex flex-col md:mt-20 mt-10 gap-20">
             {portfolioProjects.map((project) => (
-              <div
+              <Card
                 key={project.title}
-                className="bg-gray-800 rounded-3xl overflow-hidden relative z-0 after:z-10 md:pt-12 md:px-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:-outline-offset-2 after:rounded-3xl after:outline-white/20 pt-8 px-8 lg:pt-16 lg:px-20 mx-2 after:pointer-events-none"
+                className="pt-8 px-8 pb-0 lg:pt-16 lg:px-20 mx-2"
               >
                 <div
                   className="absolute inset-0 opacity-5 -z-10"
@@ -116,7 +118,7 @@ export const ProjectSection = () => {
                 </div>
                 </div>
                 {/* <CheckCircleIcon className="w-5 h-5 text-green-500 mr-2" /> */}
-              </div>
+              </Card>
             ))}
           </div>
         </div>
